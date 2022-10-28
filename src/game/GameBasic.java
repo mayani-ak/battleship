@@ -17,6 +17,9 @@ public class GameBasic {
 		game.play();
 	}
 	
+	/**
+	 * Drives basic battleship game between a real player and a robot/virtual player
+	 */
 	void play() {
 		Board humanBoard = new BasicBoard();
 		Board roboBoard = new BasicBoard();

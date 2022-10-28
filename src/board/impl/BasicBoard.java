@@ -5,6 +5,10 @@ import java.util.Random;
 import board.Board;
 import board.Location;
 
+/**
+ * Implementation of Board interface with 10x10 grid and ship lengths 2,3,4,5
+ * Initializes the board and places the ships at random non-overlapping locations 
+ */
 public class BasicBoard implements Board {
 	
 	static final int GRID_SIZE = 10;
@@ -30,6 +34,11 @@ public class BasicBoard implements Board {
 		return GRID_SIZE;
 	}
 	
+	/** randomly chooses coordinates and horizontal/vertical position 
+	 * and sets the shipIndex on each cell where the ship is placed
+	 * @param shipIndex
+	 * @param length
+	 */
 	void setShip(int shipIndex, int length) {
 		int row = 0;
 		int col = 0;
